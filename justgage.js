@@ -893,8 +893,8 @@ JustGage.prototype.generateShadow = function(svg, defs) {
 
   // set shadow
   if (!obj.config.hideInnerShadow) {
-    obj.canvas.canvas.childNodes[2].setAttribute("filter", "url(#inner-shadow)");
-    obj.canvas.canvas.childNodes[3].setAttribute("filter", "url(#inner-shadow)");
+    obj.canvas.canvas.childNodes[2].setAttribute("filter", "url("+location.href+"#inner-shadow)");
+    obj.canvas.canvas.childNodes[3].setAttribute("filter", "url("+location.href+"#inner-shadow)");
   }
 
   // var clear
